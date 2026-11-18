@@ -12,7 +12,7 @@ nextBtn.addEventListener("click", () => {
 });
 
 preBtn.addEventListener("click", () => {
-  track.scrollBy({ left: getScrollAmount(), behavior: "smooth" });
+  track.scrollBy({ left: -getScrollAmount(), behavior: "smooth" });
 });
 
 const updateButtons = () => {
