@@ -6,6 +6,8 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link href="https://icons8.com/icon/11240/source-code" />
+    <script src="https://unpkg.com/reicon@latest/cdn/reicon.js"></script>
+
   </head>
   <body>
     <main class="container">
@@ -70,7 +72,12 @@
 
       <p>A selection of things I have designed, built, and shipped.</p>
 
-      <div class="cards">
+      <div class="carousel-wrapper">
+
+        <button class="nav-btn prev"><re-icon icon="chevron-left"></re-icon></button>
+
+
+        <div class="cards">
             <div class="card">
                 <div class="topofcard">
                     <img src="./assets/images/"/>
@@ -156,8 +163,37 @@
                   </div>
                 </div>
             </div>
-         </div>
-        </div>
+
+            <div class="card">
+                <div class="topofcard">
+                    <img src="./assets/images/"/>
+                </div>
+                <div class="bottomofcard">
+                  <div class="tags">
+                    <div class="tag">
+                      <p>React</p>
+                    </div>
+                  </div>
+                  <div class="project-title">
+                    <h2>Project</h2>
+                  </div>
+                  <div class="project-description">
+                    <p>dokeokow</p>
+                  </div>
+                  <div class="project-btns">
+                    <button>
+                      Live
+                    </button>
+                    <button>
+                      Code
+                    </button>
+                  </div>
+                </div>
+            </div>
+          </div>
+         <button class="nav-btn next"><re-icon icon="angle-right"></re-icon></button>
+      </div>
+
 
         <div class="horizontal">
         <h2 class="projects">#Skills</h2>
@@ -171,18 +207,18 @@
         </div>
 
         <div class="skill-card">
-          <span><h4>01</h4></span>
-          <span><h4>Languages</h4></span>
+          <span><h4>02</h4></span>
+          <span><h4>Frameworks</h4></span>
         </div>
 
         <div class="skill-card">
-          <span><h4>01</h4></span>
-          <span><h4>Languages</h4></span>
+          <span><h4>03</h4></span>
+          <span><h4>Databases</h4></span>
         </div>
 
         <div class="skill-card">
-          <span><h4>01</h4></span>
-          <span><h4>Languages</h4></span>
+          <span><h4>04</h4></span>
+          <span><h4>Tools</h4></span>
         </div>
       </div>
      </div>

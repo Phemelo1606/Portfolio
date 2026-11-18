@@ -158,20 +158,67 @@ i {
   margin-bottom: 200px;
 }
 
+.carousel-wrapper {
+  position: relative;
+  max-width: 900px;
+  margin: 40px auto;
+  display: flex;
+  align-items: center;
+}
+
 .cards {
   display: flex;
-  gap: 50px;
+  gap: 16px;
   margin-top: 50px;
   margin-bottom: 50px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  padding: 10px 4px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.cards::-webkit-scrollbar {
+  display: none;
 }
 
 .card {
   display: flex;
+  flex: 0 0 260px;
   flex-direction: column;
   width: 500px;
   height: 500px;
   border: 2px solid hsl(215, 7%, 47%);
   border-radius: 4px;
+  scroll-snap-align: start;
+  justify-content: center;
+}
+
+.nav-btn {
+  position: absolute;
+  z-index: 10;
+  width: 40px;
+  height: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    opacity 0.2s,
+    background 0.2s;
+}
+
+.nav-btn:hover {
+  background-color: hsl(287, 60%, 67%);
+}
+
+.prev {
+  left: -20px;
+}
+
+.next {
+  right: -20px;
 }
 
 .topofcard {
