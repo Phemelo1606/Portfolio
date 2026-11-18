@@ -161,7 +161,7 @@ i {
 .carousel-wrapper {
   position: relative;
   max-width: 900px;
-  margin: 40px auto;
+  margin: 20px auto;
   display: flex;
   align-items: center;
 }
