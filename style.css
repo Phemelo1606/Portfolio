@@ -297,6 +297,7 @@ i {
 .tags {
   display: flex;
   gap: 10px;
+
 }
 
 .tag {
@@ -304,6 +305,7 @@ i {
   background: hsla(287, 60%, 67%, 0.12);
   border-radius: 3px;
   padding: 4px 8px;
+  
 }
 
 .tag p {
@@ -327,19 +329,28 @@ i {
 }
 
 .skills-cards {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 16px;
   margin: 32px 0 48px;
 }
 
 .skill-card {
   display: flex;
+  flex-direction: column;
   flex: 1;
   min-height: 180px;
   border: 1px solid hsla(215, 7%, 47%, 0.85);
   border-radius: 4px;
   padding: 20px;
   gap: 20px;
+  /* max-width: 250PX; */
+}
+
+.skills-tags{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
 }
 
 .about {
