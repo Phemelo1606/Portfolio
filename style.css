@@ -41,6 +41,12 @@ a {
   transition: color 180ms ease;
 }
 
+.hero-active a {
+  color: hsl(0, 0%, 6%);
+  text-decoration: none;
+  transition: color 180ms ease;
+}
+
 .links a:hover {
   color: hsl(287, 60%, 67%);
 }
@@ -297,7 +303,6 @@ i {
 .tags {
   display: flex;
   gap: 10px;
-
 }
 
 .tag {
@@ -305,7 +310,6 @@ i {
   background: hsla(287, 60%, 67%, 0.12);
   border-radius: 3px;
   padding: 4px 8px;
-
 }
 
 .tag p {
@@ -328,6 +332,10 @@ i {
   font-family: inherit;
 }
 
+.project-title {
+  margin-top: 10px;
+}
+
 .skills-cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -347,7 +355,7 @@ i {
   /* max-width: 250PX; */
 }
 
-.skills-tags{
+.skills-tags {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 10px;
