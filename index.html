@@ -44,26 +44,29 @@
         </div>
 
         <div class="right-content">
-          <div class="box"></div>
+          <div class="box">
+            <img src="./assets/images/IMG_2446.jpg"/>
+          </div>
         </div>
       </div>
 
       <hr class="under-hero" />
 
       <div class="row">
-        <h4>[ 2+ ]</h4>
+        <div class="row-item">
+          <h4 style="text-align: center;">[ 2+ ]</h4>
+          <h4 style="text-align: center;">years</h4>
+        </div>
 
-        <h4>[ 2+ ]</h4>
+        <div class="row-item">
+          <h4 style="text-align: center;">[ 2+ ]</h4>
+          <h4 style="text-align: center;">projects</h4>
+        </div>
 
-        <h4>[ 2 ]</h4>
-      </div>
-
-      <div class="row2">
-        <h4>years</h4>
-
-        <h4>projects</h4>
-
-        <h4>internships</h4>
+        <div class="row-item">
+          <h4 style="text-align: center;">[ 2 ]</h4>
+          <h4 style="text-align: center;">internships</h4>
+        </div>
       </div>
 
       <div class="horizontal">
@@ -248,7 +251,7 @@
              I’m looking for a team where curiosity and craft come first.
           </p>
 
-          <button class="download-btn">Download CV</button>
+          <button class="download-btn"><a href="./assets/Phemelo_Shopelekae_CV (2).pdf" download="">Download CV</a></button>
         </div>
         <div class="aboutme-image">
           <img src="#"/>
@@ -266,25 +269,37 @@
         </p>
         <div class="contactflex">
           <div class="mylinks">
-
+            <p class="letsWork-links">// say Hello</p>
+            <a href=""><re-icon icon="envelope2"></re-icon> Gmail</a>
+            <a href="https://github.com/Phemelo1606">GitHub Link</a>
+            <a href="www.linkedin.com/in/phemelo-shopelekae-875663228"><i class="fa-brands fa-linkedin"></i> Linkedin Link</a>
           </div>
 
-          <div class="message">
+          <form action="https://formspree.io/f/mgakybly" method="POST" class="message">
             <div class="name-Email">
-              <input type="text" class="input" placeholder="Your name">
-              <input type="email" class="input" placeholder="you@email.com">
+              <div class="name">
+                <label for="name">Name</label>
+                <input type="text" class="input" name="name" id="name" placeholder="Your name">
+              </div>
+              <div class="email">
+                <label for="email">Email</label>
+                <input type="email" class="input" name="email" id="email" placeholder="you@email.com">
+              </div>
+
             </div>
             <div class="text">
-                <input type="text" class="input" placeholder="[Tell me about your project">
+                <label for="message">Message</label>
+                <input type="text" class="input" name="message" id="message" placeholder="Tell me about your project">
             </div>
-          </div>
+            <button type="submit" class="submit" >Send Message</button>
+          </form>
         </div>
       </div>
      </div>
     </main>
 
     <footer>
-      
+
     </footer>
   </body>
 </html>
