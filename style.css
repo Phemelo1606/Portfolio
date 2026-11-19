@@ -305,7 +305,7 @@ i {
   background: hsla(287, 60%, 67%, 0.12);
   border-radius: 3px;
   padding: 4px 8px;
-  
+
 }
 
 .tag p {
@@ -381,6 +381,7 @@ i {
   display: flex;
   flex: 1;
   min-height: 320px;
+  max-width: 310px;
   border: 1px solid hsla(287, 60%, 67%, 0.45);
   background: linear-gradient(
     145deg,
